@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #111;
+  color: #fff;
+}
+
+.navbar {
+  background: #2b1a12;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffcc00;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover {
+  color: #ffcc00;
+}
+
+.cont {
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.cont h2{
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.card-div {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+}
+
+.card h3 {
+  color: #ffcc00;
+}
+
+.card p {
+  color: #ddd;
+}
+
+.but-ped{
+    margin-top:20px;
+    background:#ffcc00;
+    border:none;
+    padding:12px 30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.h3-ped{
+  margin-top:30px;color:#ffcc00;
+}
+
+footer {
+  background: #000;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-div p {
+  margin: 8px 0;
+}
+
+.socials i {
+  margin: 0 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  color: #ffcc00;
+}
+
+.faq {
+  font-size: 0.9rem;
+  color: #ccc;
+}
