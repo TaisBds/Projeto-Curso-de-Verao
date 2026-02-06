@@ -1,4 +1,4 @@
-# 📌 Sistema de Vendas Online – Espetaria Tradicional
+# 🍖 Sistema de Vendas Online – Espetaria Tradicional
 
 ## 👩‍💻 Autoras
 - Sarah Silva  
