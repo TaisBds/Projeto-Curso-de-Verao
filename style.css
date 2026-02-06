@@ -2,20 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  background: #111;
+  background-image: url(img/churras.jpg);
+  background-size: cover;      
+  background-position: center; 
+  background-repeat: no-repeat;
   color: #fff;
 }
 
 .navbar {
   background: #2b1a12;
+  position: relative;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+nav::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    #2b1a12 0%,
+    #4a3a22 60%,
+    transparent 100%
+  );
 }
 
 .logo {
@@ -26,10 +45,10 @@ body {
 
 nav a {
   margin-left: 20px;
+  margin-right: 60px;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 60px;
 }
 
 nav a:hover {
@@ -40,13 +59,8 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 40px;
-  background: linear-gradient(to right, #000, #2b1a12);
-}
-
-.slogan a{
-  text-decoration: none;
-  color: 545454;
+  padding: 80px 40px 60px;
+  background: linear-gradient(to bottom, #4a3a22 0%, #2b1a12 100%, #4a3a22 0%);
 }
 
 .slogan {
@@ -72,6 +86,15 @@ nav a:hover {
   font-weight: bold;
   margin-left: 70px;
 }
+.slogan button :hover{
+  color: red;
+
+}
+
+.slogan a {
+  text-decoration: none;
+  color: #2b1a12;
+}
 
 .img-div .img {
   width: 500px;
@@ -85,14 +108,15 @@ nav a:hover {
 }
 
 .mv-section {
-  padding: 50px 40px;
+  padding: 70px 40px;
   text-align: center;
-  display: block;
 }
 
 .mv-section h2 {
   color: #ffcc00;
   margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .card-div {
@@ -101,24 +125,24 @@ nav a:hover {
   align-items: center;
   gap: 30px;
   margin-top: 20px;
-  
 }
 
 .card {
-  background: #1a1a1a;
-  padding: 80px;
+  background: #1a1a1a96;
+  padding: 40px;
   border-radius: 10px;
   width: 400px;
   height: 500px;
   margin: 20px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card h3 {
   color: #ffcc00;
   margin-top: 20px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 16PX;
+  font-size: 16px;
 }
 
 .card p {
@@ -127,6 +151,7 @@ nav a:hover {
 }
 
 .img-card {
+  width: 100%;
   max-width: 300px;
   height: 300px;
   border: 2px dashed #ffcc00;
@@ -142,33 +167,26 @@ nav a:hover {
   height: 200px;
   border: 3px solid #ffcc0050;
   border-radius: 10px;
-  justify-content: space-between;
 }
 
-.icon{
-  margin: 10px;
-  width: 30px;
-  height: 30px;
-
-
-}
-.location{
-  padding: 50px 40px;
+.location {
+  padding: 70px 40px;
   background: #2b1a12;
   text-align: center;
 }
 
 footer {
-  background: #000;
+  background: linear-gradient(to bottom, #2b1a12 0%, #000 100%);
   padding: 30px;
   text-align: center;
+  font-size: 20px;
 }
 
 .footer-div p {
-  margin: 8px 0;
+  margin: 2px 0;
 }
 
-.socials i {
+.socials a {
   margin: 0 10px;
   font-size: 20px;
   cursor: pointer;
@@ -182,3 +200,4 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
 }
+

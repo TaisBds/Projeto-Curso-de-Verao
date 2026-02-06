@@ -2,12 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
-  background: #111;
+  background-image: url(img/churras.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -39,8 +45,8 @@ nav a:hover {
   text-align: center;
 }
 
-.cont h2{
-  color: #ffcc00;
+.cont h2 {
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -67,23 +73,25 @@ nav a:hover {
   color: #ddd;
 }
 
-.but-ped{
-    margin-top:20px;
-    background:#ffcc00;
-    border:none;
-    padding:12px 30px;
-    font-weight:bold;
-    cursor:pointer;
+.but-ped {
+  margin-top: 20px;
+  background: #ffcc00;
+  border: none;
+  padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.h3-ped{
-  margin-top:30px;color:#ffcc00;
+.h3-ped {
+  margin-top: 30px;
+  color: #ffffff;
 }
 
 footer {
   background: #000;
   padding: 30px;
   text-align: center;
+  margin-top: 35px;
 }
 
 .footer-div p {
@@ -103,4 +111,8 @@ footer {
 .faq {
   font-size: 0.9rem;
   color: #ccc;
+}
+
+.cont {
+  flex: 1;
 }
